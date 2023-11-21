@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bread Product Page</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    // JavaScript for image swapping
+    function changeImage(imageSrc) {
+      document.getElementById('mainImage').src = imageSrc;
+    }
+  </script>
+</head>
+<body>
+
+  <div>
+    <header style="background-image: url(/image/home-bg.jpg);">
+      <div class="logo">
+        <img src="/image/about-img.png" alt="Logo">
+      </div>
+      <br>
+      <nav>
+          <ul>
+            <li><a href="/index.html" style="font-weight: bolder;color: black;">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0);" class="dropbtn" style="font-weight: bolder;color: black;">Category &#9662;</a>
+              <div class="dropdown-content">
+                <a href="/categories/food.html">الاكل</a>
+                <a href="/categories/health.html">الصحة</a>
+                <a href="/categories/herbs.html">الاعشاب</a>
+              </div>
+            </li>
+            <li><a href="#" style="font-weight: bolder;color: black;">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <div class="product-page">
+        <div class="product-page">    
+            <div class="product-images">
+              <img src="https://arganofsouss.com/wp-content/uploads/2023/06/huile_dargan_cosmetique-scaled.jpg" alt="Bread Image 1" id="mainImage" class="main-image">
+              <div class="small-images">
+                <img src="https://arganofsouss.com/wp-content/uploads/2023/06/huile_dargan_cosmetique-scaled.jpg" alt="Bread Image 1" onclick="changeImage('https://arganofsouss.com/wp-content/uploads/2023/06/huile_dargan_cosmetique-scaled.jpg')" class="small-image">
+                <img src="https://arganofsouss.com/wp-content/uploads/2023/06/DSC00083-scaled.jpg" alt="Bread Image 2" onclick="changeImage('https://arganofsouss.com/wp-content/uploads/2023/06/DSC00083-scaled.jpg')" class="small-image">
+                <img src="https://arganofsouss.com/wp-content/uploads/2023/06/DSC00094.jpg" alt="Bread Image 3" onclick="changeImage('https://arganofsouss.com/wp-content/uploads/2023/06/DSC00094.jpg')" class="small-image">
+                <img src="https://arganofsouss.com/wp-content/uploads/2023/09/argan-cosmitic-1000x1000.jpg" alt="Bread Image 4" onclick="changeImage('https://arganofsouss.com/wp-content/uploads/2023/09/argan-cosmitic-1000x1000.jpg')" class="small-image">
+              </div>
+            </div>
+      <div class="product-details">
+        <h1>Huile d’Argan Cosmétique</h1>
+        <h2 class="price" style="color: green;">119.00Dhs</h2>
+        <button class="buy-btn">Commandez Maintenant</button>
+        <div class="description">
+          <h2>Description</h2>
+          <p style="font-size: medium;">Notre huile d’argan cosmétique pure et naturelle est extraite des noyaux de l’arbre d’argan au cœur du Maroc, et est une gemme rare et précieuse qui nourrira et revitalisera votre peau, vos cheveux et vos ongles.
+            tre huile d’argan est un produit luxueux et abordable qui vous offrira une expérience de beauté naturelle incomparable.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- Footer content -->
+  </footer>
+
+</body>
+</html>
